@@ -37,8 +37,8 @@ class _ParticleCanvasState extends State<ParticleCanvas>
   @override
   void initState() {
     addDots();
-    controller =
-        AnimationController(vsync: this, duration: const Duration(seconds: 10));
+    controller = AnimationController(
+        vsync: this, duration: const Duration(seconds: 100));
     animation = Tween<double>(begin: 0, end: 1).animate(controller)
       ..addListener(() {
         setState(() {

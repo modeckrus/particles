@@ -16,6 +16,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       darkTheme: ThemeData.dark(),
+      themeMode: ThemeMode.dark,
       home: HomePage(),
     );
   }
